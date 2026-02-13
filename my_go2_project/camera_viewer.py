@@ -10,7 +10,7 @@ class CameraViewer(Node):
     def __init__(self):
         super().__init__('camera_viewer')
         self.subscription = self.create_subscription(
-            Image, '/camera/image_raw', self.listener_callback, 10)
+            Image, '/image_raw', self.listener_callback, 10)
         self.subscription
         self.br = CvBridge()
         self.get_logger().info('CameraViewer node started.')

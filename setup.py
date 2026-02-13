@@ -25,6 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_viewer = my_go2_project.camera_viewer:main',
+            'yolo_detector = my_go2_project.yolo_detector:main',
+            'person_greeter = my_go2_project.person_greeter:main',
         ],
     },
 )
